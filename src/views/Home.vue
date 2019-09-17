@@ -2,12 +2,18 @@
   <div class="home">
     <portada></portada>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <div class="row d-flex">
+    
+    <div class="container mt-5 pt-5 mb-5">
+        <h3 class="ml-3 pb-3 font-weight-bold">Productos</h3>
+        <div class="row m-0 ">
     <div class="col-sm-12 col-lg-4 mb-5" v-for="(product, index) in Products" :key="product.id"  >
         <card  v-if="index < 3"   :name="product.name" :description="product.description" :image="product.image" :url="product.url"  ></card>
         <!-- <card :category="category" ></card> -->
+       </div>
+        </div>
       </div>
-      </div>
+
+
       <div class="container" >
       <h4 class="d-flex justify-content-start ">Category</h4>
 		<div class="d-flex justify-content-start">
